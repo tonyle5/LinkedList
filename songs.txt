@@ -1,0 +1,21 @@
+Artist name; Title; Length; Number of likes
+Adele; Rolling in the Deep; 4.03; 1200
+Ed Sheeran; Shape of You; 3.53; 1500
+Taylor Swift; Love Story; 3.55; 1300
+The Weeknd; Blinding Lights; 3.20; 1800
+Billie Eilish; Bad Guy; 3.14; 2000
+Bruno Mars; Uptown Funk; 4.31; 1600
+Rihanna; Diamonds; 3.45; 1400
+Justin Bieber; Sorry; 3.20; 1700
+Katy Perry; Firework; 3.48; 1200
+Maroon 5; Sugar; 3.55; 1900
+Ariana Grande; Thank U, Next; 3.27; 2100
+Coldplay; Viva la Vida; 4.03; 1500
+Drake; Hotline Bling; 4.27; 1600
+Dua Lipa; Don't Start Now; 3.03; 1800
+Shawn Mendes; Senorita; 3.11; 2000
+Lady Gaga; Poker Face; 3.57; 1400
+Khalid; Young Dumb & Broke; 3.22; 1700
+Adele; Someone Like You; 4.45; 2200
+Sam Smith; Stay With Me; 2.52; 1300
+Sia; Chandelier; 3.36; 2000
