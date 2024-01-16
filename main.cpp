@@ -102,14 +102,14 @@ void addSong(SongList& songList) {
   cin.getline(title, STR_SIZE);
 
   getNumber("Enter the length of the song: ", "Please enter a valid number!",
-            length);
+            0.0, DBL_MAX, length);
 
-  getNumber("Enter the number of likes: ", "Please enter a valid number!",
-            numberOfLikes);
+  getNumber("Enter the number of likes: ", "Please enter a valid number!", 0,
+            INT_MAX, numberOfLikes);
 
   cout << endl;
 
-  Song song(title, artistName, length, numberOfLikes);
+  Song song(artistName, title, length, numberOfLikes);
   songList.addSong(song);
 }
 
@@ -124,24 +124,15 @@ void editLikes(SongList& songList) {
   int numberOfLikes;
   int songCount = songList.getSongCount();
 
-  do {
-    getNumber("Enter the number of likes: ", "Please enter a valid number!",
-              numberOfLikes);
+  getNumber("Enter the number of likes: ", "Please enter a valid number!", 0,
+            INT_MAX, numberOfLikes);
 
-    if (numberOfLikes < 0)
-      cout << "Invalid number of likes!! Please try again!!!" << endl << endl;
-  } while (numberOfLikes < 0);
-
-  do {
-    getNumber("Enter the song position: ", "Please enter a valid number!",
-              songPosition);
-
-    if (songPosition < 0 || songPosition > songCount) {
-      cout << "Invalid song position!! Please try again!!!" << endl << endl;
-    }
-  } while (songPosition < 0 || songPosition > songCount);
+  getNumber("Enter the song position: ", "Please enter a valid number!", 1,
+            songCount, songPosition);
 
   songList.editLikes(songPosition, numberOfLikes);
+  cout << "The number of likes for the song has been updated!!" << endl
+       << endl;
 }
 
 // Name:   displaySongsByArtist()
@@ -168,13 +159,8 @@ void displaySongsByArtist(SongList& songList) {
 void removeSongsWithFewerLikes(SongList& songList) {
   int numberOfLikes;
 
-  do {
-    getNumber("Please enter the number of likes: ",
-              "Please enter a valid number!", numberOfLikes);
-
-    if (numberOfLikes < 0)
-      cout << "Invalid number of likes!! Please try again!!!" << endl << endl;
-  } while (numberOfLikes < 0);
+  getNumber("Enter the number of likes: ", "Please enter a valid number!", 0,
+            INT_MAX, numberOfLikes);
 
   songList.removeSongsWithFewerLikes(numberOfLikes);
 }
@@ -206,7 +192,9 @@ void exeOption(char option, SongList& songList) {
       songList.displaySongs();
       break;
     case 'Q':
-      songList.writeData("songs.txt");
+      if (!songList.writeData("songs.txt")) {
+        cout << "Error writing to the file!!" << endl;
+      }
       break;
     default:
       cout << "Invalid option!! Please try again!!!" << endl << endl;

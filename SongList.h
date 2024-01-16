@@ -1,12 +1,16 @@
 #ifndef _SONGLIST_
 #define _SONGLIST_
 
-#include "MyUtil.h"
+#include "myUtil.h"
 #include "Song.h"
 
 /**
- * This class represents a song list ADT. It uses a linked list to store the
- * songs.
+ * Name: Tony Le
+ * Class: CS260 - 12720
+ * Project: #1
+ * Date: Jan 13, 2024
+ * Description: This class represents a song list ADT. It uses a linked list
+ *              to store the songs.
  */
 class SongList {
   private:

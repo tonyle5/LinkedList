@@ -1,11 +1,14 @@
 #ifndef SONG_H
 #define SONG_H
 
-#include "MyUtil.h"
+#include "myUtil.h"
 
 /**
- * This class represents a song object.
- */
+ * Name: Tony Le
+ * Class: CS260 - 12720
+ * Project: #1
+ * Date: Jan 13, 2024
+ * Description: This class represents a song object.*/
 class Song {
   private:
     char* artistName = nullptr;

@@ -65,6 +65,7 @@
         "cwctype": "cpp",
         "mutex": "cpp",
         "stdexcept": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "climits": "cpp"
     }
 }

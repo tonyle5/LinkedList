@@ -1,3 +1,10 @@
+/* Name: Tony Le
+ * Class: CS260 - 12720
+ * Project: #1
+ * Date: Jan 13, 2024
+ * Description: This is the header file for the main program.
+ */
+
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -6,7 +13,7 @@
 #include <iostream>
 #include <limits>
 
-#include "MyUtil.h"
+#include "myUtil.h"
 #include "SongList.h"
 
 // Function prototypes

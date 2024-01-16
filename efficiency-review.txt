@@ -1,0 +1,25 @@
+Project 1 Efficiency Review Write-up
+Author: Tony Le
+Date: 01/13/2024
+
+- How well did the data structure selected perform for the assigned
+  application?
+
+  The linked list is suitable for storing the song list since it is easier
+  to add or remove a song from the list as it doesn't require shifting many
+  elements to add or remove a song.
+
+- Would a different data structure work better? If so, which one and why...
+
+  This data structure is very suitable for our use case.
+
+- What was efficient about your design and use of the data structure?
+
+  I used recursion to remove songs with fewer likes.
+
+- What would you do differently if you had more time to solve the problem?
+
+  If I had more time to solve the problem, I could implement algorithms to
+  search for songs of an artist in a case-insensitive manner. Additionally,
+  I would like to populate the song list in alphabetical order if songs have
+  the same number of likes.

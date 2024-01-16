@@ -1,3 +1,10 @@
+/* Name: Tony Le
+ * Class: CS260 - 12720
+ * Project: #1
+ * Date: Jan 13, 2024
+ * Description: This is the implementation file for a SongList ADT.
+ */
+
 #include "SongList.h"
 
 // Name:   SongList::SongList()
@@ -88,12 +95,35 @@ bool SongList::editLikes(int songPosition, int newNumberOfLikes) {
 
   int positionCount = 1;
   Node* cur = this->head;
+  Node* prev = nullptr;
+
+  // Point the cur pointer to the specified position
   while (cur && positionCount < songPosition) {
+    prev = cur;
     cur = cur->next;
     positionCount++;
   }
 
   cur->data.setNumberOfLikes(newNumberOfLikes);
+
+  // Since we edit the number of likes of the song, we need to remove and add
+  // it back to the list to maintain the order of the list.
+  if (!prev) {
+    this->head = cur->next;
+  } else if (cur == this->tail) {
+    prev->next = cur->next;
+    this->tail = prev;
+  } else {
+    prev->next = cur->next;
+  }
+  this->songCount--;
+
+  // Add the song back to the list.
+  this->addSong(cur->data);
+
+  delete cur;
+  cur = nullptr;
+  prev = nullptr;
 
   return true;
 }
@@ -107,7 +137,7 @@ void SongList::displaySongs() {
   int positionCount = 1;
   Node* cur = this->head;
 
-  cout << "Displaying " << this->songCount << " song(s): " << endl;
+  cout << "Displaying " << this->songCount << " song(s): " << endl << endl;
 
   while (cur) {
     cout << positionCount << ". ";

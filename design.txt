@@ -2,17 +2,20 @@ Project 1 design write-up
 Author: Tony Le
 Date  : 01/13/2024
 
-1. What functions your ADT will need to have?
 - The Song ADT includes:
   + A constructor initializes the song information, including artistName,
     title, length, numberOfLikes.
-  + Getters and setters
+  + A copy constructor.
+  + A copy assignment operator.
+  + A destructor.
+  + Getters and setters for member variables.
   + A print function prints the song information.
+  + A private function used to initialize the song information.
 
 - The SongList ADT includes:
   + A Node struct includes data members and next pointer member. This pointer
     points to another Node in the SongList.
-  + A head pointer points to the first node of the SongList and the tail
+  + A head pointer points to the first node of the SongList and the tail.
     pointer points to the last node of the SongList.
   + A construct initializes the data members.
   + A destructor releases all dynamic memory and resets data members to their
@@ -23,12 +26,7 @@ Date  : 01/13/2024
   + A function displays all songs for an artist (in order of popularity).
   + A function removes all songs with fewer than M likes, where M is sent in
     as an argument.
-
-
-2. How each function will report success/failure back to the calling routine?
-
-3. How each function will shield the client program from the details of the data structure?
-
-4. What data structures you will be using and how each of the special cases. Consider drawing pointer diagrams with “before” and “after” diagrams for each special case.
-
-5. Which function/functions are recursive?
+  + A recursive function removes all songs starting from a specified node.
+  + A function loads data from a text file; this function returns the number of
+    loaded songs or the ERROR constant when there is a problem.
+  + A function writes data to a text file.

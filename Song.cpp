@@ -1,3 +1,10 @@
+/* Name: Tony Le
+ * Class: CS260 - 12720
+ * Project: #1
+ * Date: Jan 13, 2024
+ * Description: This is the implementation file for a Song ADT.
+ */
+
 #include "Song.h"
 
 // Name:   Song::Song()

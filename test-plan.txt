@@ -1,0 +1,209 @@
+Welcome to Song List program!
+This program will help you keeping track of song lists.
+
+20 song(s) added from the data file.
+
+Pick an option from below:
+
+(A)Add a new song
+(E)Edit the number of likes for a song
+(D)Display all songs in the list
+(S)Display all songs for an artist (in order of popularity)
+(R)Remove all songs with fewer than a number of likes
+(Q)Quit
+
+a
+Enter the artist name: Adele
+Enter the song title: Hello
+Enter the length of the song: -1
+Please enter a valid number!
+Enter the length of the song: a
+Please enter a valid number!
+Enter the length of the song: 4.55
+Enter the number of likes: 2300
+
+Displaying 21 song(s):
+
+1. Adele;Hello;4.55;2300
+2. Adele; Someone Like You;4.45;2200
+3. Ariana Grande; Thank U, Next;3.27;2100
+4. Sia; Chandelier;3.36;2000
+5. Shawn Mendes; Senorita;3.11;2000
+6. Billie Eilish; Bad Guy;3.14;2000
+7. Maroon 5; Sugar;3.55;1900
+8. Dua Lipa; Don't Start Now;3.03;1800
+9. The Weeknd; Blinding Lights;3.2;1800
+10. Khalid; Young Dumb & Broke;3.22;1700
+11. Justin Bieber; Sorry;3.2;1700
+12. Drake; Hotline Bling;4.27;1600
+13. Bruno Mars; Uptown Funk;4.31;1600
+14. Coldplay; Viva la Vida;4.03;1500
+15. Ed Sheeran; Shape of You;3.53;1500
+16. Lady Gaga; Poker Face;3.57;1400
+17. Rihanna; Diamonds;3.45;1400
+18. Sam Smith; Stay With Me;2.52;1300
+19. Taylor Swift; Love Story;3.55;1300
+20. Katy Perry; Firework;3.48;1200
+21. Adele; Rolling in the Deep;4.03;1200
+
+Pick an option from below:
+
+(A)Add a new song
+(E)Edit the number of likes for a song
+(D)Display all songs in the list
+(S)Display all songs for an artist (in order of popularity)
+(R)Remove all songs with fewer than a number of likes
+(Q)Quit
+
+e
+Displaying 21 song(s):
+
+1. Adele;Hello;4.55;2300
+2. Adele; Someone Like You;4.45;2200
+3. Ariana Grande; Thank U, Next;3.27;2100
+4. Sia; Chandelier;3.36;2000
+5. Shawn Mendes; Senorita;3.11;2000
+6. Billie Eilish; Bad Guy;3.14;2000
+7. Maroon 5; Sugar;3.55;1900
+8. Dua Lipa; Don't Start Now;3.03;1800
+9. The Weeknd; Blinding Lights;3.2;1800
+10. Khalid; Young Dumb & Broke;3.22;1700
+11. Justin Bieber; Sorry;3.2;1700
+12. Drake; Hotline Bling;4.27;1600
+13. Bruno Mars; Uptown Funk;4.31;1600
+14. Coldplay; Viva la Vida;4.03;1500
+15. Ed Sheeran; Shape of You;3.53;1500
+16. Lady Gaga; Poker Face;3.57;1400
+17. Rihanna; Diamonds;3.45;1400
+18. Sam Smith; Stay With Me;2.52;1300
+19. Taylor Swift; Love Story;3.55;1300
+20. Katy Perry; Firework;3.48;1200
+21. Adele; Rolling in the Deep;4.03;1200
+
+Enter the number of likes: -0.1
+Please enter a valid number!
+Enter the number of likes: 0.1
+Please enter a valid number!
+Enter the number of likes: 1000
+Enter the song position: 0
+Please enter a valid number!
+Enter the song position: 1
+The number of likes for the song has been updated!!
+
+Pick an option from below:
+
+(A)Add a new song
+(E)Edit the number of likes for a song
+(D)Display all songs in the list
+(S)Display all songs for an artist (in order of popularity)
+(R)Remove all songs with fewer than a number of likes
+(Q)Quit
+
+D
+Displaying 21 song(s):
+
+1. Adele; Someone Like You;4.45;2200
+2. Ariana Grande; Thank U, Next;3.27;2100
+3. Sia; Chandelier;3.36;2000
+4. Shawn Mendes; Senorita;3.11;2000
+5. Billie Eilish; Bad Guy;3.14;2000
+6. Maroon 5; Sugar;3.55;1900
+7. Dua Lipa; Don't Start Now;3.03;1800
+8. The Weeknd; Blinding Lights;3.2;1800
+9. Khalid; Young Dumb & Broke;3.22;1700
+10. Justin Bieber; Sorry;3.2;1700
+11. Drake; Hotline Bling;4.27;1600
+12. Bruno Mars; Uptown Funk;4.31;1600
+13. Coldplay; Viva la Vida;4.03;1500
+14. Ed Sheeran; Shape of You;3.53;1500
+15. Lady Gaga; Poker Face;3.57;1400
+16. Rihanna; Diamonds;3.45;1400
+17. Sam Smith; Stay With Me;2.52;1300
+18. Taylor Swift; Love Story;3.55;1300
+19. Katy Perry; Firework;3.48;1200
+20. Adele; Rolling in the Deep;4.03;1200
+21. Adele;Hello;4.55;1000
+
+Pick an option from below:
+
+(A)Add a new song
+(E)Edit the number of likes for a song
+(D)Display all songs in the list
+(S)Display all songs for an artist (in order of popularity)
+(R)Remove all songs with fewer than a number of likes
+(Q)Quit
+
+// TEST CASE SAME ARTIST WITH MULTIPLE SONGS
+
+s
+Enter the artist name: Adele
+1. Adele; Someone Like You;4.45;2200
+2. Adele; Rolling in the Deep;4.03;1200
+3. Adele;Hello;4.55;1000
+
+Pick an option from below:
+
+(A)Add a new song
+(E)Edit the number of likes for a song
+(D)Display all songs in the list
+(S)Display all songs for an artist (in order of popularity)
+(R)Remove all songs with fewer than a number of likes
+(Q)Quit
+
+r
+Enter the number of likes: -1
+Please enter a valid number!
+Enter the number of likes: -1.1
+Please enter a valid number!
+Enter the number of likes: 0.1
+Please enter a valid number!
+Enter the number of likes: 1001
+Displaying 20 song(s):
+
+1. Adele; Someone Like You;4.45;2200
+2. Ariana Grande; Thank U, Next;3.27;2100
+3. Sia; Chandelier;3.36;2000
+4. Shawn Mendes; Senorita;3.11;2000
+5. Billie Eilish; Bad Guy;3.14;2000
+6. Maroon 5; Sugar;3.55;1900
+7. Dua Lipa; Don't Start Now;3.03;1800
+8. The Weeknd; Blinding Lights;3.2;1800
+9. Khalid; Young Dumb & Broke;3.22;1700
+10. Justin Bieber; Sorry;3.2;1700
+11. Drake; Hotline Bling;4.27;1600
+12. Bruno Mars; Uptown Funk;4.31;1600
+13. Coldplay; Viva la Vida;4.03;1500
+14. Ed Sheeran; Shape of You;3.53;1500
+15. Lady Gaga; Poker Face;3.57;1400
+16. Rihanna; Diamonds;3.45;1400
+17. Sam Smith; Stay With Me;2.52;1300
+18. Taylor Swift; Love Story;3.55;1300
+19. Katy Perry; Firework;3.48;1200
+20. Adele; Rolling in the Deep;4.03;1200
+
+Pick an option from below:
+
+(A)Add a new song
+(E)Edit the number of likes for a song
+(D)Display all songs in the list
+(S)Display all songs for an artist (in order of popularity)
+(R)Remove all songs with fewer than a number of likes
+(Q)Quit
+
+r
+Enter the number of likes: 2201
+Displaying 0 song(s):
+
+
+Pick an option from below:
+
+(A)Add a new song
+(E)Edit the number of likes for a song
+(D)Display all songs in the list
+(S)Display all songs for an artist (in order of popularity)
+(R)Remove all songs with fewer than a number of likes
+(Q)Quit
+
+q
+
+Thank you for using the program!!
